@@ -1,0 +1,54 @@
+{
+  "name": "@biza-ai/saudi-iban",
+  "version": "1.0.0",
+  "description": "Zero-dependency universal TypeScript library for Saudi Arabian IBAN validation, formatting, and bank identification under SAMA standards. Works in Browser, Node.js, Deno, Bun, and Edge Workers.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc && esbuild src/index.ts --outfile=dist/index.cjs --format=cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biza-ai/saudi-iban.git"
+  },
+  "homepage": "https://biza.app",
+  "bugs": {
+    "url": "https://github.com/biza-ai/saudi-iban/issues"
+  },
+  "keywords": [
+    "saudi-arabia",
+    "iban",
+    "iban-validation",
+    "sama",
+    "saudi-banks",
+    "al-rajhi",
+    "snb",
+    "wps",
+    "fintech",
+    "banking",
+    "آيبان",
+    "السعودية"
+  ],
+  "author": "BIZA App (https://biza.app)",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "~5.8.3",
+    "vitest": "^3.0.0"
+  }
+}
